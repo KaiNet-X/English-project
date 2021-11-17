@@ -22,16 +22,31 @@ public class SpeechBubble : MonoBehaviour
         GetComponent<Image>().enabled = false;
     }
 
-    public void Init()
+    void Update()
+    {
+        if (Owner != null) rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y);
+    }
+
+    public static SpeechBubble Create(string text, float delay, Vector2 outerSize, Vector2 innerSize, Vector2 offset, GameObject owner = null)
+    {
+        var go = Instantiate(AssetBank.SpeechBubble, GameObject.Find("Canvas").transform);
+        var bubble = go.GetComponent<SpeechBubble>();
+
+        bubble.Text = text;
+        bubble.Delay = delay;
+        bubble.Size = outerSize;
+        bubble.TextSize = innerSize;
+        bubble.Offset = offset;
+        bubble.Owner = owner;
+
+        return bubble;
+    }
+
+    public void UpdateVisuals()
     {
         rectTransform.sizeDelta = Size;
         text.GetComponent<RectTransform>().sizeDelta = TextSize;
         GetComponent<Image>().enabled = true;
         StartCoroutine(text.GetComponent<TextSystem>().AnimateText(Text, Delay));
-    }
-
-    void Update()
-    {
-        if (Owner != null) rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y);
     }
 }
