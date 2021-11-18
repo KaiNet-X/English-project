@@ -59,10 +59,14 @@
     <Compile Include="Assets\Code\Animations.cs" />
     <Compile Include="Assets\Code\AssetBank.cs" />
     <Compile Include="Assets\Code\PC_Interactible.cs" />
-    <Compile Include="Assets\Code\SpeechBubble.cs" />
-    <Compile Include="Assets\Code\BinaryClicked.cs" />
+    <Compile Include="Assets\Code\Desktop\BinaryClicked.cs" />
     <Compile Include="Assets\Code\Game1\Game1Manager.cs" />
+    <Compile Include="Assets\Code\SpeechBubble.cs" />
     <Compile Include="Assets\Code\Game1\BinaryValue.cs" />
+    <Compile Include="Assets\Code\Desktop\DesktopManager.cs" />
+    <Compile Include="Assets\Code\Desktop\PowerClicked.cs" />
+    <Compile Include="Assets\DontDestroy.cs" />
+    <Compile Include="Assets\Code\BossBattle1\BossBattle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

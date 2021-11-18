@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8933208312998250311}
   - component: {fileID: 8933208312998250310}
-  - component: {fileID: 8933208312998250304}
   - component: {fileID: 8933208312998250305}
+  - component: {fileID: 2795420851565761970}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -45,7 +45,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c50567703f51cd44ab2de7590b4bed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &8933208312998250304
+--- !u!114 &8933208312998250305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8933208312998250309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db6767b433cc32418e8a860fa9edd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeEffect: {fileID: 8444327048204105284, guid: 2ccfc13366f9c7146bd37c90a5b376d8, type: 3}
+  speechButton: {fileID: 2337382414074639644, guid: 2e80e9de17114964e80fbdb8c9306431, type: 3}
+  text: {fileID: 7524890606132022002, guid: d07567c78171d774492990c82076ce60, type: 3}
+  e: {fileID: 6125347112030932665, guid: d29cab70b0dd9ea4592d6efb71953435, type: 3}
+  lineStart: {fileID: 3669416381461291101, guid: 11caeab3c5ac23640941ff65a6016711, type: 3}
+  zero: {fileID: 3776113081287345661, guid: fa5835a5d91584f419beed6efe05601a, type: 3}
+  one: {fileID: 5710068030971526134, guid: daa6444f967363441b26073212bd4dd2, type: 3}
+  two: {fileID: 3573364699147600122, guid: 8880d541307cb494096ffa9f267d63db, type: 3}
+  kaiTrack: {fileID: 8300000, guid: 882a89e273c06bb4686dbaf79213abb8, type: 3}
+  bossBattle: {fileID: 8300000, guid: 834153017451d844882ecd06d0f1a470, type: 3}
+  heartBeat: {fileID: 8300000, guid: f9cad6d772e28314ab41f6733830dbe9, type: 3}
+--- !u!82 &2795420851565761970
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,7 +78,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 882a89e273c06bb4686dbaf79213abb8, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -141,19 +164,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8933208312998250305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8933208312998250309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db6767b433cc32418e8a860fa9edd17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeEffect: {fileID: 8444327048204105284, guid: 2ccfc13366f9c7146bd37c90a5b376d8, type: 3}
-  speechButton: {fileID: 2337382414074639644, guid: 2e80e9de17114964e80fbdb8c9306431, type: 3}
-  text: {fileID: 7524890606132022002, guid: d07567c78171d774492990c82076ce60, type: 3}
-  e: {fileID: 6125347112030932665, guid: d29cab70b0dd9ea4592d6efb71953435, type: 3}

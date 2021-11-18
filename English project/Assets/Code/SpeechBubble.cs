@@ -15,11 +15,14 @@ public class SpeechBubble : MonoBehaviour
     public string Text;
     public float Delay;
 
+    public Text TextBox;
+
     void Start()
     {
         text = transform.GetChild(0).gameObject;
         rectTransform = GetComponent<RectTransform>();
         GetComponent<Image>().enabled = false;
+        TextBox = text.GetComponent<Text>();
     }
 
     void Update()
@@ -44,6 +47,7 @@ public class SpeechBubble : MonoBehaviour
 
     public void UpdateVisuals()
     {
+        rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y);
         rectTransform.sizeDelta = Size;
         text.GetComponent<RectTransform>().sizeDelta = TextSize;
         GetComponent<Image>().enabled = true;

@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.9881, y: 4.42}
-  m_SizeDelta: {x: 421.2873, y: 132.5771}
+  m_AnchoredPosition: {x: 8.4861, y: 4.42}
+  m_SizeDelta: {x: 520.8935, y: 132.5771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116260609
 MonoBehaviour:
@@ -512,6 +512,23 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &1220841245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8933208312998250309, guid: 65060876fcbc5254da0dc949d27c7525, type: 3}
+  m_PrefabInstance: {fileID: 2065919550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1220841246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220841245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f737ed53bf5ed4aa232df94d42419f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1222483666
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +540,7 @@ GameObject:
   - component: {fileID: 1222483668}
   - component: {fileID: 1222483667}
   - component: {fileID: 1222483669}
+  - component: {fileID: 1222483670}
   m_Layer: 0
   m_Name: power icon
   m_TagString: Untagged
@@ -621,6 +639,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.74, y: 4.74}
   m_EdgeRadius: 0
+--- !u!114 &1222483670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222483666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa35874ea0aad247bbcbd5b8a374578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449491035
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,5 +836,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8933208312998250310, guid: 65060876fcbc5254da0dc949d27c7525, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 65060876fcbc5254da0dc949d27c7525, type: 3}

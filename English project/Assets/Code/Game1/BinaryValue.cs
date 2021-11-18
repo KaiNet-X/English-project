@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class BinaryValue : MonoBehaviour
 {
-    public static int score;
-    public int value;
+    public int Value;
 
     private void OnMouseDown()
     {
-        if (value == 2)
+        if (Value == 2)
         {
-            score += 5;
-            Instantiate(GameObject.Find("Manager").GetComponent<Game1Manager>().G0).transform.position = gameObject.transform.position;
+            Game1Manager.Score += 5;
+            Game1Manager.Errors--;
+            try
+            {
+                Instantiate(GameObject.Find("Manager").GetComponent<Game1Manager>().G0).transform.position = gameObject.transform.position;
+            }
+            catch
+            {
+
+            }
             Destroy(gameObject);
         }
         else
         {
-            score -= 3;
+            Game1Manager.Score -= 3;
             Destroy(gameObject);
         }
     }
