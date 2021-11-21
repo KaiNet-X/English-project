@@ -15,6 +15,8 @@ public class AssetBank : MonoBehaviour
 
     public static AudioClip KaiTrack;
     public static AudioClip BossBattle;
+    public static AudioClip BossBattle2;
+    public static AudioClip Credits;
     public static AudioClip HeartBeat;
 
     public GameObject fadeEffect;
@@ -29,6 +31,8 @@ public class AssetBank : MonoBehaviour
 
     public AudioClip kaiTrack;
     public AudioClip bossBattle;
+    public AudioClip bossBattle2;
+    public AudioClip credits;
     public AudioClip heartBeat;
 
     public static int HackerPoints = 0;
@@ -47,6 +51,8 @@ public class AssetBank : MonoBehaviour
 
         KaiTrack = kaiTrack;
         BossBattle = bossBattle;
+        BossBattle2 = bossBattle2;
+        Credits = credits;
         HeartBeat = heartBeat;
     }
 }

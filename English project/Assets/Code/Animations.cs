@@ -29,13 +29,27 @@ public static class Animations
     {
         Vector2 pos = transform.position;
         float iteration = 0;
-
+        float z = transform.position.z;
         while (iteration < time)
         {
-            transform.position = Vector2.Lerp(pos, toPosition, iteration / time);
+            transform.position = Vector3.Lerp(pos, new Vector3(toPosition.x, toPosition.y, z), iteration / time);
             yield return null;
             iteration += Time.deltaTime;
         }
-        transform.position = toPosition;
+        transform.position = new Vector3(toPosition.x, toPosition.y, z);
+    }
+
+    public static IEnumerator InterpolateRelative(Transform transform, Vector2 toPosition, float time)
+    {
+        Vector2 pos = transform.position;
+        float iteration = 0;
+        float z = transform.position.z;
+        while (iteration < time)
+        {
+            transform.position = Vector3.Lerp(pos, (Vector3)pos + new Vector3(toPosition.x, toPosition.y, z), iteration / time);
+            yield return null;
+            iteration += Time.deltaTime;
+        }
+        transform.position = (Vector3)pos + new Vector3(toPosition.x, toPosition.y, z);
     }
 }

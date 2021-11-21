@@ -8,10 +8,6 @@ using UnityEngine.UI;
 public class Game1Manager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject LineStart;
-    public GameObject G0;
-    public GameObject G1;
-    public GameObject G2;
 
     public static int Errors = 0;
     public static int Score = 0;
@@ -27,13 +23,13 @@ public class Game1Manager : MonoBehaviour
     void StartGame()
     {
         int lines = 6;
-        int columns = 15;
+        int columns = 8;
         for (int y = 0; y < lines; y++)
         {
-            Instantiate(LineStart).transform.position = new Vector2(-11, 3.1f) + (1.4f * new Vector2(0, -y));
+            Instantiate(AssetBank.LineStart).transform.position = new Vector2(-6, 3.1f) + (1.4f * new Vector2(0, -y));
             for (int x = 0; x < columns; x++)
             {
-                RandNum().transform.position = new Vector2(-11, 3.1f) + (1.4f * new Vector2(x+1, -y));
+                RandNum().transform.position = new Vector2(-6, 3.1f) + (1.4f * new Vector2(x+1, -y));
             }
         }
         Running = true;
@@ -44,12 +40,12 @@ public class Game1Manager : MonoBehaviour
     {
         int ver = (int)UnityEngine.Random.Range(0, 10);
 
-        if (ver <= 4) return Instantiate(G0);
-        else if (ver <= 8) return Instantiate(G1);
+        if (ver <= 4) return Instantiate(AssetBank.Zero);
+        else if (ver <= 8) return Instantiate(AssetBank.One);
         else
         {
             Errors++;
-            return Instantiate(G2);
+            return Instantiate(AssetBank.Two);
         }
     }
 

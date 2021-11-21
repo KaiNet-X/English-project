@@ -246,7 +246,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9e70e8883034cd5459df4f5f7efd9e9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -608,7 +608,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1681700450}
   - component: {fileID: 1681700451}
-  - component: {fileID: 1681700453}
   - component: {fileID: 1681700452}
   m_Layer: 0
   m_Name: Monitor
@@ -625,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681700449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.91, y: 1.35, z: 0}
+  m_LocalPosition: {x: -0.91, y: 0.94, z: -1}
   m_LocalScale: {x: 0.93249714, y: 0.96372527, z: 1}
   m_Children: []
   m_Father: {fileID: 318546181}
@@ -670,7 +669,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e23028e52d0280644ae9955968ef2bed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -708,18 +707,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
---- !u!114 &1681700453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681700449}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13669c62f108bd64caeff87847652617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1764312532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 763654706599953492, guid: 164dafd4318e60b49a1c05021dd7786a, type: 3}
@@ -782,7 +769,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 75484a04970cf5849b420ebde90fc17f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -912,7 +899,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1832159986
 RectTransform:
@@ -1136,6 +1123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 763654706599953491, guid: 164dafd4318e60b49a1c05021dd7786a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 763654706599953492, guid: 164dafd4318e60b49a1c05021dd7786a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1195,7 +1186,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 882a89e273c06bb4686dbaf79213abb8, type: 3}
     - target: {fileID: 8933208312998250309, guid: 65060876fcbc5254da0dc949d27c7525, type: 3}
       propertyPath: m_Name
-      value: Manager
+      value: UniversalManager
       objectReference: {fileID: 0}
     - target: {fileID: 8933208312998250311, guid: 65060876fcbc5254da0dc949d27c7525, type: 3}
       propertyPath: m_RootOrder

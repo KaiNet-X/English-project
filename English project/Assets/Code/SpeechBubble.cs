@@ -27,7 +27,7 @@ public class SpeechBubble : MonoBehaviour
 
     void Update()
     {
-        if (Owner != null) rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y);
+        //if (Owner != null) rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y, -4);
     }
 
     public static SpeechBubble Create(string text, float delay, Vector2 outerSize, Vector2 innerSize, Vector2 offset, GameObject owner = null)
@@ -47,7 +47,7 @@ public class SpeechBubble : MonoBehaviour
 
     public void UpdateVisuals()
     {
-        rectTransform.position = Owner.transform.position + new Vector3(Offset.x, Offset.y);
+        rectTransform.position = (Vector2)Owner.transform.position + new Vector2(Offset.x, Offset.y);
         rectTransform.sizeDelta = Size;
         text.GetComponent<RectTransform>().sizeDelta = TextSize;
         GetComponent<Image>().enabled = true;

@@ -19,7 +19,7 @@ public class TextSystem : MonoBehaviour
         var text = go.GetComponent<Text>();
 
         if (scale != null) transform.localScale = scale.Value;
-        transform.position = position;
+        transform.localPosition = position;
         transform.sizeDelta = size;
 
         if (fontData != null)
