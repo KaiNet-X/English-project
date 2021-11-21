@@ -6,10 +6,15 @@ using UnityEngine.UI;
 public class BinaryClicked : MonoBehaviour
 {
     public static bool FirstTime = true;
+    private bool Clicked = false;
 
     private void OnMouseDown()
     {
-        StartCoroutine(StartGame());
+        if (!Clicked)
+        {
+            Clicked = true;
+            StartCoroutine(StartGame());
+        }
     }
 
     private IEnumerator StartGame()

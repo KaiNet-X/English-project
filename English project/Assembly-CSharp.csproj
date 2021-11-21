@@ -58,6 +58,7 @@
     <Compile Include="Assets\Code\Desktop\DesktopManager.cs" />
     <Compile Include="Assets\Code\CutsceneManager.cs" />
     <Compile Include="Assets\Code\Animations.cs" />
+    <Compile Include="Assets\Code\GameOver\GameOver.cs" />
     <Compile Include="Assets\Code\AssetBank.cs" />
     <Compile Include="Assets\Code\PC_Interactible.cs" />
     <Compile Include="Assets\Code\Desktop\BinaryClicked.cs" />
@@ -67,9 +68,8 @@
     <Compile Include="Assets\Code\SpeechBubble.cs" />
     <Compile Include="Assets\Code\BossBattle1\BossBattle.cs" />
     <Compile Include="Assets\Code\Game1\BinaryValue.cs" />
-    <Compile Include="Assets\Code\GameOver\GameOver.cs" />
-    <Compile Include="Assets\Code\BossBattleGame.cs" />
     <Compile Include="Assets\Code\Utils.cs" />
+    <Compile Include="Assets\Code\BossBattleGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

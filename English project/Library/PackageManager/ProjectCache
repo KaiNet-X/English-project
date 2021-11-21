@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637727103377263816
-    m_Hash: 2641351944
+      ticks: 637730619510422401
+    m_Hash: 287196759
   m_LockFileStatus:
     m_FilePath: C:/Users/Kai/Documents/GitHub/English-project/English project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637727103491153992
-    m_Hash: 3539099538
+      ticks: 637730619510422401
+    m_Hash: 3538647997
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

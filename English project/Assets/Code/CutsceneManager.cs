@@ -251,6 +251,7 @@ public class CutsceneManager : MonoBehaviour
 
             var fade = Instantiate(AssetBank.FadeEffect).GetComponent<SpriteRenderer>();
             fade.color = new Color(0, 0, 0, 0);
+            fade.sortingOrder = 5;
             context.StartCoroutine(Animations.FadeSprite(fade, new Color(0, 0, 0, 1), 2.5f));
             yield return new WaitForSeconds(3f);
 
@@ -312,14 +313,14 @@ public class CutsceneManager : MonoBehaviour
                     Time = 7,
                     SpawnInterval = .1f,
                     Prob2 = .5f,
-                    Speed1 = 1.5f,
+                    Speed1 = 2f,
                     Speed2 = 3
                 },
                 new Phase
                 {
                     Time = 15,
                     SpawnInterval = .3f,
-                    Prob2 = .8f,
+                    Prob2 = .7f,
                     Speed1 = 1.5f,
                     Speed2 = 1.75f
                 },

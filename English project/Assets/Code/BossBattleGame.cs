@@ -64,9 +64,9 @@ public class BossBattleGame : MonoBehaviour
                 Elapsed = 0;
 
                 if (Random.Range(0, 1000) <= CurrentPhase.Prob2 * 1000)
-                    StartCoroutine(Float2(Instantiate(AssetBank.Two, new Vector3(Random.Range(-6.5f, 6.5f), 5, -2), Quaternion.identity), CurrentPhase.Speed2));
+                    StartCoroutine(Float2(Instantiate(AssetBank.Two, new Vector3(Random.Range(-6f, 6f), 5, -2), Quaternion.identity), CurrentPhase.Speed2));
                 else
-                    StartCoroutine(Float2(Instantiate(AssetBank.One, new Vector3(Random.Range(-6.5f, 6.5f), 5, -2), Quaternion.identity), CurrentPhase.Speed1));
+                    StartCoroutine(Float2(Instantiate(AssetBank.One, new Vector3(Random.Range(-6f, 6f), 5, -2), Quaternion.identity), CurrentPhase.Speed1));
             }
         }
     }
